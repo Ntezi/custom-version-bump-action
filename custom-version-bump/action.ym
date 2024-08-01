@@ -1,0 +1,12 @@
+name: 'Custom Version Bump'
+description: 'Fetches the current version and increments it based on the version fragment.'
+inputs:
+  version-fragment:
+    description: 'The version fragment to increment (major, feature, bug, alpha, beta, pre).'
+    required: true
+outputs:
+  next-version:
+    description: 'The incremented version number.'
+runs:
+  using: 'node12'
+  main: 'index.js'
