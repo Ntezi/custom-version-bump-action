@@ -25,3 +25,15 @@ steps:
 
   - name: Use Next Version
     run: echo "Next version is ${{ steps.bump_version.outputs.next-version }}"
+
+```
+### Structure
+
+````
+custom-version-bump-action/
+│
+├── action.yml        # Action metadata file
+├── index.js          # Main script file
+├── package.json      # Node.js dependencies
+└── README.md         # Documentation
+````
